@@ -69,12 +69,7 @@ const Bannerfour = () => {
         </div>
 
         <style>{`
-            .slick-slide > div { padding: 10px; }
-            .slick-dots li button:before { color: #333; font-size: 10px; }
-            .slick-dots li.slick-active button:before { color: #3b82f6; }
-            @media (max-width: 768px) {
-                .slick-slide > div { padding: 10px 0px; } 
-            }
+           
         `}</style>
 
         <SlickSlider {...settings} className="relative">
