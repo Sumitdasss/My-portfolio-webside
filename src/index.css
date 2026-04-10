@@ -1,0 +1,23 @@
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-text-gradient {
+  background: linear-gradient(
+    to right,
+   #ef4444, /* 1. Red */
+      #f97316, /* 2. Orange */
+      #eab308, /* 3. Yellow */
+      #22c55e, /* 4. Green */
+      #3b82f6, /* 5. Blue */
+      #6366f1, /* 6. Indigo */
+      #a855f7, /* 7. Purple */
+      #ef4444  /* Loop smooth ksh-e abar muted */ 
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-flow 3s linear infinite;
+}
