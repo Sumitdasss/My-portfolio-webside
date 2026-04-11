@@ -1,6 +1,7 @@
 import React from 'react'
 import img from '/src/assets/22440.jpg'
 import { FaLinkedin, FaFacebook,FaGithub } from "react-icons/fa";
+
 const Banner = () => {
   return (
 
@@ -35,18 +36,49 @@ const Banner = () => {
                 Frontend Web Developer
               </h1>
              
-              <div className="flex space-x-4 mt-8">
-                <div className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5">
-                  <span className="text-[22px]"><FaLinkedin/></span>
-                </div>
-                <div className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5">
-                  <a href='https://www.facebook.com/sumit.das.413998' target="_blank" rel="noreferrer" className="text-[22px]"><FaFacebook/></a>
-                </div>
-                <div className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5">
-                  <a href='https://github.com/sumitdasss' target="_blank" rel="noreferrer" className="text-[22px]"><FaGithub/></a>
-                </div>
-              </div>
+            <div className="flex space-x-4 mt-8">
+  {/* LinkedIn */}
+  <div className="relative group">
+    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5 text-[22px]">
+      <FaLinkedin />
+    </a>
+    <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      LinkedIn
+    </span>
+  </div>
 
+  {/* Facebook */}
+  <div className="relative group">
+    <a href='https://www.facebook.com/sumit.das.413998' target="_blank" rel="noreferrer" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5 text-[22px]">
+      <FaFacebook />
+    </a>
+    <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Facebook
+    </span>
+  </div>
+
+  {/* Github */}
+  <div className="relative group">
+    <a href='https://github.com/sumitdasss' target="_blank" rel="noreferrer" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5 text-[22px]">
+      <FaGithub />
+    </a>
+    <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Github
+    </span>
+  </div>
+
+  {/* Google Business */}
+  <div className="relative group">
+    <a href='https://share.google/BGgJwE27O3LmXUEey' target="_blank" rel="noreferrer" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-[#f97316] hover:text-[#f97316] transition cursor-pointer text-gray-400 bg-white/5 text-[22px]">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.908 5.957l-1.107-5.123c-.11-.512-.56-.834-1.01-.834H4.21c-.45 0-.9.322-1.01.834L2.093 5.957c-.16.745.037 1.517.543 2.062.054.057.111.108.17.157v12.244c0 1.1.9 2 2 2h14.4c1.1 0 2-.9 2-2V8.176c.059-.049.116-.1.17-.157.506-.545.703-1.317.543-2.062zM5.353 1.94h13.294l.802 3.71c.044.204-.01.407-.151.558-.15.16-.36.252-.577.252-.533 0-.966-.433-.966-.966V4.53h-1.2v.964c0 .662-.538 1.2-1.2 1.2s-1.2-.538-1.2-1.2V4.53h-1.2v.964c0 .662-.538 1.2-1.2 1.2s-1.2-.538-1.2-1.2V4.53h-1.2v.964c0 .662-.538 1.2-1.2 1.2s-1.2-.538-1.2-1.2V4.53h-1.2v.964c0 .533-.433.966-.966.966-.217 0-.427-.092-.577-.252-.141-.151-.195-.354-.151-.558l.802-3.71zM18.8 20.44H5.2V8.46c.045.011.092.022.14.022.697 0 1.306-.39 1.627-.968.321.578.93.968 1.627.968.697 0 1.306-.39 1.627-.968.321.578.93.968 1.627.968.697 0 1.306-.39 1.627-.968.321.578.93.968 1.627.968.697 0 1.306-.39 1.627-.968.048 0 .095-.011.14-.022v11.98zM14.4 11.24h-4.8v4.8h4.8v-4.8z"/>
+      </svg>
+    </a>
+    <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+      Google Business
+    </span>
+  </div>
+</div>
            
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
                 <button className="bg-[#f97316] px-8 md:px-10 py-3 rounded-md font-bold hover:bg-[#ea580c] transition duration-300 shadow-lg shadow-orange-500/20">
