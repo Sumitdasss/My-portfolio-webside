@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
 const ContactSection = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_iilgqfs','template_pgnlgns', form.current,'8sFKdd9saUd-f5gbd')
+      .then((result) => {
+          console.log(result.text); 
+          alert("Message Sent!");
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text); 
+          alert("Error sending message.");
+      });
+  }; 
+
   return (
     <section className="py-24 bg-[#0a0a0a] text-white">
       <div className="container mx-auto px-6">
@@ -18,26 +35,26 @@ const ContactSection = () => {
           
           {/* Contact Form - 7 Columns */}
           <div className="lg:col-span-7 bg-[#0c0c0c] p-8 md:p-12 rounded-3xl border border-zinc-900">
-            <form className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-mono text-zinc-500 mb-2">NAME</label>
-                  <input type="text" placeholder="Sumit Das" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
+                  <input name="user_name" type="text" placeholder="Sumit Das" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
                 </div>
                 <div>
                   <label className="block text-sm font-mono text-zinc-500 mb-2">EMAIL</label>
-                  <input type="email" placeholder="example@mail.com" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
+                  <input name="user_email" type="email" placeholder="example@mail.com" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-mono text-zinc-500 mb-2">SUBJECT</label>
-                <input type="text" placeholder="Project Inquiry" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
+                <input name="subject" type="text" placeholder="Project Inquiry" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
               </div>
               <div>
                 <label className="block text-sm font-mono text-zinc-500 mb-2">MESSAGE</label>
-                <textarea rows="5" placeholder="Tell me about your project..." className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors resize-none"></textarea>
+                <textarea name="message" rows="5" placeholder="Tell me about your project..." className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors resize-none"></textarea>
               </div>
-              <button className="w-full md:w-auto px-10 py-4 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl transition-all transform hover:scale-105">
+              <button type="submit" className="w-full md:w-auto px-10 py-4 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl transition-all transform hover:scale-105">
                 SEND MESSAGE
               </button>
             </form>
@@ -90,32 +107,28 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Map Section (Placeholder) */}
-           {/* Map Section */}
-<div className="h-64 bg-zinc-900 rounded-3xl border border-zinc-800 overflow-hidden relative group">
-  
-  {/* View in Google Maps Button */}
-  <a 
-    href="https://www.google.com/maps/place/Basta+Radha+Krishna+Mondir/@23.6973238,90.3340596,17.25z/data=!4m6!3m5!1s0x3755bfd5ca41e06f:0x25cbb88cc0bb9e8e!8m2!3d23.6940316!4d90.3357982!16s%2Fg%2F11j5rp74b4?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" 
-    target="_blank" 
-    rel="noreferrer"
-    className="absolute top-4 right-4 z-10 bg-white text-black px-4 py-2 rounded-lg font-bold text-sm shadow-lg hover:bg-amber-500 hover:text-white transition-all flex items-center gap-2"
-  >
-    <FaMapMarkerAlt size={14} />
-    VIEW IN MAP
-  </a>
+            {/* Map Section */}
+            <div className="h-64 bg-zinc-900 rounded-3xl border border-zinc-800 overflow-hidden relative group">
+              <a 
+                href="https://maps.google.com" 
+                target="_blank" 
+                rel="noreferrer"
+                className="absolute top-4 right-4 z-10 bg-white text-black px-4 py-2 rounded-lg font-bold text-sm shadow-lg hover:bg-amber-500 hover:text-white transition-all flex items-center gap-2"
+              >
+                <FaMapMarkerAlt size={14} />
+                VIEW IN MAP
+              </a>
 
-  {/* Interactive Map Iframe */}
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58459.1661609101!2d90.3155891!3d23.686641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9059f425b71%3A0x6331904a43d964f!2sKeraniganj!5e0!3m2!1sen!2sbd!4v1712850000000!5m2!1sen!2sbd"
-    width="100%" 
-    height="100%" 
-    style={{ border: 0 }} 
-    allowFullScreen="" 
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14619.066487841355!2d90.3541888!3d23.6485504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
 
           </div>
         </div>

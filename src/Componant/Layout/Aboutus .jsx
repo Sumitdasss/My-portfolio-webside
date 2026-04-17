@@ -46,12 +46,12 @@ const AboutUs = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-[#111] p-6 rounded-3xl border border-gray-800">
-                <h2 className="text-3xl font-bold text-blue-500">50+</h2>
+                <h2 className="text-3xl font-bold text-blue-500">20+</h2>
                 <p className="text-gray-500 text-sm uppercase mt-1">Projects Done</p>
               </div>
               <div className="bg-[#111] p-6 rounded-3xl border border-gray-800">
-                <h2 className="text-3xl font-bold text-blue-500">3+</h2>
-                <p className="text-gray-500 text-sm uppercase mt-1">Years Experience</p>
+                <h2 className="text-3xl font-bold text-blue-500">6+</h2>
+                <p className="text-gray-500 text-sm uppercase mt-1">Month Experience</p>
               </div>
             </div>
 

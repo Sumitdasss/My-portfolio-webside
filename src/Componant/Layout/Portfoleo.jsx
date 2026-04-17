@@ -219,15 +219,15 @@ const PortfolioSection = () => {
               <div className="space-y-10">
                 <div className="border-l-2 border-zinc-800 pl-8 relative group">
                   <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-                  <h4 className="text-blue-500 font-mono text-sm">2021 - 2025</h4>
-                  <h3 className="text-2xl font-bold">BSc in Computer Science</h3>
-                  <p className="text-zinc-400 mt-2">Deep dive into Algorithms, Data Structures, and Software Engineering principles.</p>
+                  <h4 className="text-blue-500 font-mono text-sm">2026 - 2030</h4>
+                  <h3 className="text-2xl font-bold">Pending</h3>
+                  <p className="text-zinc-400 mt-2">Pending</p>
                 </div>
                 <div className="border-l-2 border-zinc-800 pl-8 relative group">
                   <div className="absolute -left-[9px] top-0 w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-blue-600 transition-colors"></div>
-                  <h4 className="text-zinc-500 font-mono text-sm">2018 - 2020</h4>
+                  <h4 className="text-zinc-500 font-mono text-sm">2024 - 2025</h4>
                   <h3 className="text-2xl font-bold">Higher Secondary</h3>
-                  <p className="text-zinc-400 mt-2">Completed science background with a focus on Mathematics and Physics.</p>
+                  <p className="text-zinc-400 mt-2">Completed Humantis background with a focus on Govt. Job  </p>
                 </div>
               </div>
             </div>
