@@ -39,7 +39,7 @@ const ContactSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-mono text-zinc-500 mb-2">NAME</label>
-                  <input name="user_name" type="text" placeholder="Sumit Das" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
+                  <input name="user_name" type="text" placeholder="Your Name" className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" />
                 </div>
                 <div>
                   <label className="block text-sm font-mono text-zinc-500 mb-2">EMAIL</label>
