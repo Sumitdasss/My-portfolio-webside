@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
+  const navigat = useNavigate()
+  const handel= ()=>{
+    navigat("/Contact")
+  }
   return (
     <div className="bg-black text-white py-24 px-6 font-sans">
       <div className="max-w-[1200px] mx-auto">
@@ -46,7 +51,7 @@ const AboutUs = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-[#111] p-6 rounded-3xl border border-gray-800">
-                <h2 className="text-3xl font-bold text-blue-500">20+</h2>
+                <h2 className="text-3xl font-bold text-blue-500">10+</h2>
                 <p className="text-gray-500 text-sm uppercase mt-1">Projects Done</p>
               </div>
               <div className="bg-[#111] p-6 rounded-3xl border border-gray-800">
@@ -55,7 +60,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <button className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-2xl transition-all shadow-lg hover:scale-105 active:scale-95">
+            <button onClick={handel}  className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-2xl transition-all shadow-lg hover:scale-105 active:scale-95">
               Contact Me
             </button>
           </div>
