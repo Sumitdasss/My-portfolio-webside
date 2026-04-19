@@ -197,13 +197,13 @@ const PortfolioSection = () => {
               <div className="space-y-10">
                 <div className="border-l-2 border-zinc-800 pl-8 relative group">
                   <div className="absolute -left-[9px] top-0 w-4 h-4 bg-amber-600 rounded-full"></div>
-                  <h4 className="text-amber-500 font-mono text-sm">2024 - PRESENT</h4>
+                  <h4 className="text-amber-500 font-mono text-sm">2026 - PRESENT</h4>
                   <h3 className="text-2xl font-bold">Frontend Developer</h3>
                   <p className="text-zinc-400 mt-2">Working on complex React projects, converting Figma to pixel-perfect code with Tailwind CSS.</p>
                 </div>
                 <div className="border-l-2 border-zinc-800 pl-8 relative group">
                   <div className="absolute -left-[9px] top-0 w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-amber-600 transition-colors"></div>
-                  <h4 className="text-zinc-500 font-mono text-sm">2023 - 2024</h4>
+                  <h4 className="text-zinc-500 font-mono text-sm">2025 - 2026</h4>
                   <h3 className="text-2xl font-bold">Junior Web Developer</h3>
                   <p className="text-zinc-400 mt-2">Developed responsive landing pages and integrated RESTful APIs.</p>
                 </div>
@@ -220,7 +220,7 @@ const PortfolioSection = () => {
     {/* Full Stack Development Course */}
     <div className="border-l-2 border-zinc-800 pl-8 relative group">
       <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-      <h4 className="text-blue-500 font-mono text-sm">2025 - Present</h4>
+      <h4 className="text-blue-500 font-mono text-sm">2026 - Present</h4>
       <h3 className="text-2xl font-bold">Full Stack Web Development</h3>
       <p className="text-zinc-400 mt-2">Creative IT Institute</p>
       <p className="text-zinc-500 text-sm mt-1">

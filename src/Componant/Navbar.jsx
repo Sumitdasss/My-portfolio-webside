@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
-import { Link,  } from 'react-router-dom'
+import { Link, useNavigate,  } from 'react-router-dom'
 import { RxCross1 } from "react-icons/rx";
 import { FaBars } from "react-icons/fa";
   
 const Navbar = () => {
+const navegat=useNavigate()
+
+const handel=()=>{
+  navegat("/Contact")
+}
+
     const [isOpen, setIsOpen] = useState(false);
  
   return (
@@ -29,7 +35,7 @@ const Navbar = () => {
 
          
           <div className="hidden md:block">
-            <button className='bg-amber-600 text-white font-medium py-2.5 px-5 rounded-md hover:bg-amber-700 duration-500'>
+            <button onClick={handel} className='bg-amber-600 text-white font-medium py-2.5 px-5 rounded-md hover:bg-amber-700 duration-500'>
               Hire Me
             </button>
           </div>
@@ -50,7 +56,7 @@ const Navbar = () => {
             <Link to="/portfolio" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Portfolio</Link>
             <Link to="/Contact" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Contact</Link>
             <li className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Blog</li>
-            <button className='bg-amber-600 text-white font-medium py-2 px-5 rounded-md w-fit'>
+            <button onClick={handel} className='bg-amber-600 text-white font-medium py-2 px-5 rounded-md w-fit'>
               Hire Me
             </button>
           </ul>

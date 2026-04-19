@@ -1,8 +1,15 @@
 import React from 'react'
 import img from '/src/assets/22440.jpg'
 import { FaLinkedin, FaFacebook,FaGithub } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+const navegat=useNavigate()
+
+const handel=()=>{
+  navegat("/Contact")
+}
+
   return (
 
 
@@ -81,7 +88,7 @@ const Banner = () => {
 </div>
            
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
-                <button className="bg-[#f97316] px-8 md:px-10 py-3 rounded-md font-bold hover:bg-[#ea580c] transition duration-300 shadow-lg shadow-orange-500/20">
+                <button onClick={handel} className="bg-[#f97316] px-8 md:px-10 py-3 rounded-md font-bold hover:bg-[#ea580c] transition duration-300 shadow-lg shadow-orange-500/20">
                   Hire Me
                 </button>
                 <button className="border border-gray-600 px-8 md:px-10 py-3 rounded-md font-bold hover:bg-white hover:text-black transition duration-300">
