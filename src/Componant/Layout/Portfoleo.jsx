@@ -180,6 +180,42 @@ const PortfolioSection = () => {
               </p>
             </div>
 
+
+           <div className="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-purple-500 transition-all duration-300 group">
+  {/* Redux Logo Image */}
+  <div className="w-12 h-12 mb-6 group-hover:scale-110 transition-transform duration-300">
+    <img 
+      src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" 
+      alt="Redux Logo" 
+      className="w-full h-full object-contain"
+    />
+  </div>
+
+  <h3 className="font-bold text-xl mb-3">Redux</h3>
+  <p className="text-sm text-zinc-400 leading-relaxed">
+    Managing global state using Redux Toolkit, Thunk middleware, and predictable data flow across complex applications.
+  </p>
+</div>
+
+
+
+<div className="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-purple-600 transition-all duration-300 group">
+  {/* Bootstrap Logo Image */}
+  <div className="w-12 h-12 mb-6 group-hover:scale-110 transition-transform duration-300">
+    <img 
+      src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" 
+      alt="Bootstrap Logo" 
+      className="w-full h-full object-contain"
+    />
+  </div>
+
+  <h3 className="font-bold text-xl mb-3">Bootstrap</h3>
+  <p className="text-sm text-zinc-400 leading-relaxed">
+    Designing responsive and mobile-first websites quickly with pre-built components and powerful grid systems.
+  </p>
+</div>
+
+
           </div>
         </div>
       </div>
