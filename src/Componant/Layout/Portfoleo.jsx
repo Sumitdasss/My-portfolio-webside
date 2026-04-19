@@ -211,26 +211,40 @@ const PortfolioSection = () => {
             </div>
 
             {/* Side 2: Educational Related */}
-            <div>
-              <h2 className="text-4xl font-bold mb-12 flex items-center gap-4">
-                <span className="w-12 h-[2px] bg-blue-600"></span>
-                EDUCATION
-              </h2>
-              <div className="space-y-10">
-                <div className="border-l-2 border-zinc-800 pl-8 relative group">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-                  <h4 className="text-blue-500 font-mono text-sm">2026 - 2030</h4>
-                  <h3 className="text-2xl font-bold">Pending</h3>
-                  <p className="text-zinc-400 mt-2">Pending</p>
-                </div>
-                <div className="border-l-2 border-zinc-800 pl-8 relative group">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-blue-600 transition-colors"></div>
-                  <h4 className="text-zinc-500 font-mono text-sm">2024 - 2025</h4>
-                  <h3 className="text-2xl font-bold">Higher Secondary</h3>
-                  <p className="text-zinc-400 mt-2">Completed Humantis background with a focus on Govt. Job  </p>
-                </div>
-              </div>
-            </div>
+           <div>
+  <h2 className="text-4xl font-bold mb-12 flex items-center gap-4">
+    <span className="w-12 h-[2px] bg-blue-600"></span>
+    EDUCATION & TRAINING
+  </h2>
+  <div className="space-y-10">
+    {/* Full Stack Development Course */}
+    <div className="border-l-2 border-zinc-800 pl-8 relative group">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+      <h4 className="text-blue-500 font-mono text-sm">2025 - Present</h4>
+      <h3 className="text-2xl font-bold">Full Stack Web Development</h3>
+      <p className="text-zinc-400 mt-2">Creative IT Institute</p>
+      <p className="text-zinc-500 text-sm mt-1">
+        Focusing on modern MERN stack technologies and professional software development practices.
+      </p>
+    </div>
+
+    {/* Pending University Section */}
+    <div className="border-l-2 border-zinc-800 pl-8 relative group">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-blue-600 transition-colors"></div>
+      <h4 className="text-zinc-500 font-mono text-sm">2026 - 2030</h4>
+      <h3 className="text-2xl font-bold">Pending</h3>
+      <p className="text-zinc-400 mt-2">Pending</p>
+    </div>
+
+    {/* Higher Secondary Section */}
+    <div className="border-l-2 border-zinc-800 pl-8 relative group">
+      <div className="absolute -left-[9px] top-0 w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-blue-600 transition-colors"></div>
+      <h4 className="text-zinc-500 font-mono text-sm">2024 - 2025</h4>
+      <h3 className="text-2xl font-bold">Higher Secondary Certificate</h3>
+      <p className="text-zinc-400 mt-2">Humanities Background</p>
+    </div>
+  </div>
+</div>
 
           </div>
         </div>

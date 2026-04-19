@@ -101,7 +101,7 @@ const Banner = () => {
                 </div>
                 <div className="border-l border-gray-800 h-12"></div>
                 <div className="text-center lg:text-left">
-                  <h3 className="text-xl md:text-2xl font-bold text-[#f97316]">100%</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-[#f97316]">85%</h3>
                   <p className="text-xs md:text-sm text-gray-400">Commitment</p>
                 </div>
               </div>
