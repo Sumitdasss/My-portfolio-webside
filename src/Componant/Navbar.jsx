@@ -24,12 +24,12 @@ const handel=()=>{
           {/* Desktop Menu */}
           <div className="hidden lg:block">
             <ul className='flex gap-x-10'>
-              <Link to="/" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>Home</Link>
-              <Link to="/AboutUs" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>About</Link>
-              <Link to="/service" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Services</Link>
-              <Link to="/portfolio" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Portfolio</Link>
-              <Link to="/Contact" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Contact</Link>
-              <li className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Blog</li>
+              <li><a href='/' className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>Home</a></li>
+              <li><a href='/AboutUs'  className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>About</a></li>
+              <li><a href='/service'  className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Services</a></li>
+              <li><a href="/portfolio" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Portfolio</a></li>
+              <li><a href="/Contact" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Contact</a></li>
+             <li> <a className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Blog</a></li>
             </ul>
           </div>
 
