@@ -4,7 +4,7 @@ import Bannertwo from './Bannertwo'
 import Bannerthree from './Bannerthree'
 import Bannerfour from './Bannerfour'
 import FAQSection from './FAQ'
-import ContactSection from './Gesafeanimation'
+
 
 
 const Allbennerpart = () => {
@@ -15,7 +15,7 @@ const Allbennerpart = () => {
 <Bannerthree/>
 <Bannerfour/>
 <FAQSection/>
-<ContactSection/>
+
 
 
     
