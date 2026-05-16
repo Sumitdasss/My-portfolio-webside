@@ -116,7 +116,7 @@ const FAQSection = () => {
 
     
         <div className="flex justify-center mt-14">
-           <button onClick={()=>navigate("/FAQ")} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-12 rounded-2xl transition-all shadow-lg active:scale-95">
+           <button onClick={()=>navigate("/faq")} className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-12 rounded-2xl transition-all shadow-lg active:scale-95">
              See More FAQ
            </button>
         </div>

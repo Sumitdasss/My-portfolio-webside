@@ -7,7 +7,7 @@ const Banner = () => {
 const navegat=useNavigate()
 
 const handel=()=>{
-  navegat("/Contact")
+  navegat("/contact")
 }
 
   return (

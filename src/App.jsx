@@ -21,11 +21,11 @@ function App() {
 <Navbar/>
 <Routes>
 <Route path='/' element={<Allbennerpart/>}></Route>
-<Route path='/AboutUs' element={<AboutUs/>}></Route>
-<Route path='/FAQ' element={<FAQSectiontwo/>}></Route>
+<Route path='/aboutus' element={<AboutUs/>}></Route>
+<Route path='/faq' element={<FAQSectiontwo/>}></Route>
 <Route path='/service' element={<ServicesSection/>}></Route>
 <Route path='/portfolio' element={<PortfolioSection/>}></Route>
-<Route path='/Contact' element={<ContactSection/>}></Route>
+<Route path='/contact' element={<ContactSection/>}></Route>
 
 
 </Routes>

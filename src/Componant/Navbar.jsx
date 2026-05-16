@@ -7,7 +7,7 @@ const Navbar = () => {
 const navegat=useNavigate()
 
 const handel=()=>{
-  navegat("/Contact")
+  navegat("/contact")
 }
 
     const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +25,11 @@ const handel=()=>{
           <div className="hidden lg:block">
             <ul className='flex gap-x-10'>
               <li><a href='/' className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>Home</a></li>
-              <li><a href='/AboutUs'  className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>About</a></li>
+              <li><a href='/aboutus'  className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold'>About</a></li>
               <li><a href='/service'  className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Services</a></li>
               <li><a href="/portfolio" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Portfolio</a></li>
-              <li><a href="/Contact" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Contact</a></li>
-             <li> <a className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Blog</a></li>
+              <li><a href="/contact" className='text-[18px] text-white font-medium hover:text-amber-600 duration-500 hover:font-bold cursor-pointer'>Contact</a></li>
+         
             </ul>
           </div>
 
@@ -51,10 +51,10 @@ const handel=()=>{
         <div className={`lg:hidden overflow-hidden transition-all duration-500 ${isOpen ? 'max-h-[500px] pb-6' : 'max-h-0'}`}>
           <ul className='flex flex-col gap-y-4'>
             <Link to="/" className='text-[18px] text-white font-medium hover:text-amber-600'>Home</Link>
-            <Link to="/AboutUs" className='text-[18px] text-white font-medium hover:text-amber-600'>About</Link>
+            <Link to="/aboutus" className='text-[18px] text-white font-medium hover:text-amber-600'>About</Link>
             <Link to="/service" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Services</Link>
             <Link to="/portfolio" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Portfolio</Link>
-            <Link to="/Contact" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Contact</Link>
+            <Link to="/contact" className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Contact</Link>
             <li className='text-[18px] text-white font-medium hover:text-amber-600 cursor-pointer'>Blog</li>
             <button onClick={handel} className='bg-amber-600 text-white font-medium py-2 px-5 rounded-md w-fit'>
               Hire Me
