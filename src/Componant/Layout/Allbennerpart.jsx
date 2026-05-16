@@ -7,6 +7,8 @@ import FAQSection from './FAQ'
 
 
 
+
+
 const Allbennerpart = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const Allbennerpart = () => {
 <Bannerthree/>
 <Bannerfour/>
 <FAQSection/>
+
 
 
 
